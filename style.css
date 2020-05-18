@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: helvetica, sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+figcaption {
+    margin: 5px 10px 15px 10px;
+}
+footer {
+    background: whitesmoke;
+    padding: 20px 10px;
+}
+
+/* Tablet */
+@media screen and (min-width: 773px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1%;
+    }
+    .img-2, .img-3 {
+        /*width: 49.5%;*/
+        flex-basis: 49.5%;
+    }
+} 
+
+/* Desktop */
+@media screen and (min-width: 1047px) {
+    .img-1, .img-2, .img-3 {
+        flex-basis: 32.8%;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    body {
+        width: 1170px;
+        margin: 0 auto;
+    }
+    main {
+        padding: 1% 0;
+    }
+}
+
+
