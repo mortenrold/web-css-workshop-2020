@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+main {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    grid-template-areas: 
+        "logo   nav    nav    nav    nav"
+        "banner main   main   main   aside"
+        "footer footer footer footer footer";
+}
+.bbc-nav {
+    grid-column: span4;
+}
+.big-fish {
+    grid-area: aside;
+}
+.img-3 {
+    grid-area: main;
+}
+.img-5 {
+    grid-area: footer;
+}
+.img-2 {
+    grid-area: nav;
+}
+.img-4 {
+    grid-area: footer;
+}
